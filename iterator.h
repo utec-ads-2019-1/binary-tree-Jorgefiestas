@@ -3,7 +3,6 @@
 
 #include "node.h"
 #include <stack>
-using namespace std;
 
 template <typename T> 
 class Iterator {

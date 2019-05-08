@@ -3,7 +3,6 @@
 
 #include "node.h"
 #include "iterator.h"
-using namespace std;
 
 template <typename T> 
 class BSTree {
