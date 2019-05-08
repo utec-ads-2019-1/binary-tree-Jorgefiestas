@@ -11,14 +11,18 @@ template <typename T>
 class Node {
     private:
         T data;
-        Node<T> *left;
-        Node<T> *right;
+        Node<T> *left = nullptr;
+        Node<T> *right = nullptr;
 
     template<class>
     friend class BSTree; 
 
     template<class>
     friend class Iterator; 
+    
+    Node(T data){
+        this->data = data;
+    }
 };
 
 #endif
