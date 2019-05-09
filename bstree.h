@@ -36,7 +36,7 @@ class BSTree {
         }
 
         ~BSTree() {
-            // TODO
+            root->killself();
         }
 };
 

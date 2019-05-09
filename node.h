@@ -23,6 +23,11 @@ class Node {
     Node(T data){
         this->data = data;
     }
+    void killself(){
+        if(left) left->killself();
+        if(right) right->killself();
+        delete *this;
+    }
 };
 
 #endif
